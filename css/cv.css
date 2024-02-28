@@ -1,0 +1,353 @@
+/*____________________________________________________________________________________*/
+/* Base/Global */
+
+:root {
+  font-size: 62.5%;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hidden,
+.unactive {
+  visibility: hidden;
+  display: none;
+}
+
+.shown,
+.active {
+  visibility: visible;
+  display: inherit;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 25px;
+}
+
+::-moz-scrollbar {
+  width: 10px;
+  border-radius: 25px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+
+::-moz-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #520000;
+  border-radius: 25px;
+}
+
+::-moz-scrollbar-thumb {
+  background: #520000;
+  border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-moz-scrollbar-thumb:hover {
+  background: #555;
+}
+.blankspace {
+  height: 5rem;
+}
+
+/*____________________________________________________________________________________*/
+/* Navigation */
+
+nav#mobileNavBar {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  color: #F0EAD6;
+  background-color: #1C1C16;
+}
+
+nav#mobileNavBar a {
+  color: #F0EAD6;
+  text-decoration: none;
+  font-family: 'Merriweather', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.navbarTogglerIcon {
+  fill: #F0EAD6;
+  width: 3rem;
+  height: 3em;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+nav#mobileNavBar .dropdown-menu {
+  background-color: #1C1C16;
+}
+
+nav#mobileNavBar .dropdown-item {
+  color: #35464D;
+}
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 5px;
+}
+
+/*____________________________________________________________________________________*/
+/* Header/Home */
+
+header {
+  background-color: #1C1C16;
+  height: 5vh;
+  width: 100%;
+}
+
+#homePage {
+  animation-fill-mode: forwards;
+}
+
+.numberSlideTextBox {
+  width: 100%;
+}
+
+#homePage h1 {
+  font-size: 4.6rem;
+  color: #1C1C16;
+}
+#homePage  .navbar-nav {
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+#homePage .nav-item {
+  background-color: transparent;
+  color: #1C1C16;
+  font-family: "Kumbh Sans";
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: normal;
+  padding: 1rem;
+}
+.nav-link:hover {
+  color: #292927;
+}
+
+.nav-link:hover ~ .underButtonWrapper {
+  height: 100%;
+}
+
+.underButtonWrapper{
+  height: 0;
+  transition: all linear .5s
+}
+
+.underButton {
+  width: 100%;
+  height: 100%;
+  max-height: 6px;
+  background-color: #1C1C16;
+  overflow: hidden;
+  position: relative;
+}
+
+/*____________________________________________________________________________________*/
+/* Photo System */
+
+.photo {
+  width: 20vw;
+  height: 57vh;
+  padding: .5vw;
+  margin: 0 3vw;
+  border: 2px solid #1C1C16;
+}
+
+#photoWrapper, .resultPhotoWrapper {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#photoAWrapper, #photoBWrapper, .resultPhotoWrapper > div  {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#photoA, #photoB, .resultPhotoWrapper > div {
+  width: 20vw;
+  height: 57vh;
+  margin: 1vh 0vw;
+  border: 2px solid #1C1C16;
+}
+
+/*____________________________________________________________________________________*/
+/* Main Body */
+
+main {
+  background-color: #F0EAD6;
+  height: 90vh;
+  width: 100vw;
+  padding: 5vh;
+}
+
+#resultsPage {
+  overflow-y: scroll;
+}
+
+/*____________________________________________________________________________________*/
+/* Footer */
+
+footer {
+  background-color: #1C1C16;
+  height: 5vh;
+  width: 100%;
+}
+
+/*____________________________________________________________________________________*/
+/* Global Text */
+
+svg{
+  display: inline-block;
+  width: 50px;
+} 
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, .p, 
+h1, h2, h3, h4, h5, h6, p {
+  color: #000000;
+  padding: 1.5px;
+  margin: 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kumar One', serif;
+}
+
+.h1, h1 {
+  font-size: 7.2rem;
+}
+
+.h2, h2 {
+  font-size: 6.0rem;
+}
+
+.h3, h3 {
+  font-size: 4.8rem;
+}
+
+.h4, h4 {
+  font-size: 3.6rem;
+}
+
+.h5, h5 {
+  font-size: 2.4rem;
+}
+
+.h6, h6 {
+  font-size: 2rem;
+}
+
+.p, p, li, .li {
+  font-size: 1.6rem;
+  font-family: 'Merriweather', serif;
+}
+
+
+/*____________________________________________________________________________________*/
+/* Responsive Styles */
+
+/* Custom Phone Styles */
+@media (max-width:479px) {
+  main {
+    padding: 1vh 2.5vh;
+  }
+  .photoTitle {
+    font-size: 4rem;
+  }
+  #photoWrapper, .resultPhotoWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  #photoA, #photoB, .resultPhotoWrapper > div {
+    height: 30vh;
+    width: 62vw;
+    padding: 0;
+    margin: .5vh 0vw;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  #homePage h1 {
+    font-size: 3.4rem;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  #homePage .nav-item {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  #homePage  .navbar-nav {
+    flex-direction: column;
+  }
+  .underButtonWrapper{
+    visibility: hidden;
+    display: none;
+  }
+  nav#mobileNavBar .dropdown-menu {
+    background-color: #1C1C16;
+  }
+  nav#mobileNavBar {
+    background-color: #1C1C16;
+  }
+}
+
+/* Custom Tablet Styles */
+@media (max-width:769px) {
+  main {
+    padding: 1vh 2.5vh;
+  }
+  .photoTitle {
+    font-size: 4rem;
+  }
+  #photoWrapper, .resultPhotoWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  #photoA, #photoB, .resultPhotoWrapper > div {
+    height: 37vh;
+    width: 60vw;
+    padding: 0;
+    margin: .5vh 0vw;
+    border: none;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  #photoAWrapper, #photoBWrapper {
+    flex-direction: row;
+    display: flex;
+  }
+}

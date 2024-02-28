@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Welcome to the CV site for Rayna Weeden. Here you will find all of her photography, videos, music, and more!">
+  <meta name="author" content="Rayna R. Weeden">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/icon.jpg">
+
+  <title>Pairwise Survey</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Style Css -->
+  <link href="css/cv.css" rel="stylesheet">
+  <!-- Third-Pary Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Vidaloka&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://kit.fontawesome.com/ed299dde65.js" crossorigin="anonymous"></script>
+  <!-- Others  -->
+  <link href="css/animate.min.css" rel="stylesheet">
+
+</head>
+
+<body class="d-flex flex-row">
+
+  <section class="col-12 w-100 d-flex flex-column">
+    <header>
+      <nav id="mobileNavBar" class="navbar navbar-expand-lg navbar-togglable hidden" aria-label="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto mb-2" href="#">Rayna Weeden</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNavBarCollapse"
+            aria-controls="mobileNavBarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <svg class="navbarTogglerIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="mobileNavBarCollapse" toggle="collapse" data-target="mobileNavBarCollapse">
+            <ul class="navbar-nav ms-auto mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="menuButton('homePage')">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="menuButton('aboutPage')">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="menuButton('portfolioPage')">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="menuButton('resumePage')">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="menuButton('contactPage')">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="row w-100 d-flex align-items-start m-0">
+      <div class="col-12 h-100 w-100 p-0 mx-auto d-flex justify-content-center">
+
+        <!-- Home Page -->
+        <section id="homePage" class="h-100 w-100 active">
+          <div class="container h-100">
+            <div class="row h-100 d-flex align-items-center">
+              <div class="col-12 mx-auto d-flex justify-content-center">
+                <div class="d-block">
+                  <h1 id="homePageTitle" class="animate__animated animate__fadeInUp animate__slow">Custome Pairwise Survey</h1>
+                  <nav class="navbar animate__animated animate__fadeInUp animate__slow">
+                    <ul class="navbar-nav w-100">
+                      <li class="nav-item w-50 mx-auto">
+                        <input type="text" id="numberSlideTextBox" class="numberSlideTextBox" placeholder="Enter a positive whole number">
+                        <a class="nav-link text-center mx-auto" href="#"  onclick="pageSwap('abPage')">Start</a>
+                        <div class="underButtonWrapper">
+                          <div class="underButton"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- A:B Page -->
+        <style id="abStyle">
+
+        </style>
+        <section id="abPage" class="h-100 w-100 unactive">
+          <div class="container h-100">
+            <div class="col-12 mx-auto">
+              <div class="row mx-auto align-items-center justify-content-center">
+                <h2 class="photoTitle text-center">Voting</h2>
+
+                  <div id="photoWrapper">
+
+                    <div id="photoAWrapper">
+                      <h6>Photo A</h6>
+                      <div id="photoA" class="photo" onclick="nextSlided();"></div>
+                    </div>
+                    
+                    <div id="photoBWrapper">
+                      <h6>Photo B</h6>
+                      <div id="photoB" class="photo" onclick="nextSlided();"></div>
+                    </div>
+
+                  </div>
+                
+                <div class="blankspace"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Results Page -->
+        <section id="resultsPage" class="h-100 w-100 unactive">
+          <div class="container h-100">
+            <div class="col-12 mx-auto">
+              <div id="scorePage" class="row mx-auto align-items-center justify-content-center">
+                <h2 class="text-center">Results</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+    <footer></footer>
+  </section>
+
+
+  <!-- Plugin JavaScript -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/elo.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
